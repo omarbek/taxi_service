@@ -14,7 +14,9 @@
     Route::get('/', function(){
         return view('welcome');
     });
-    Route::get('/users', function(){
-        $users = \App\User::all();
-        return view('users')->with(['users' => $users]);
-    })->name('users.all');
+    Route::get('/users', 'UserController@index')->name('users.index');
+    Route::get('/create', 'UserController@create')->name('users.create');
+    Route::post('/create', 'UserController@store')->name('users.store');
+    Route::get('/edit/{id}', 'UserController@edit')->name('users.edit');
+    Route::post('/update/{id}', 'UserController@update')->name('users.update');
+    Route::get('/delete/{id}', 'UserController@destroy')->name('users.delete');

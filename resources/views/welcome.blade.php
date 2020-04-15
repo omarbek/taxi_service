@@ -66,7 +66,7 @@
 <body>
 <div class="flex-center position-ref full-height">
     <div class="top-right links">
-        <a href="{{ Route('users.all') }}">Show users</a>
+        <a href="{{ Route('users.index') }}">Show users</a>
     </div>
     <div class="content">
         <div class="title m-b-md">

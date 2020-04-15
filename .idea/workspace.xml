@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31e1f0a7-53a5-44b8-9f91-b57e1ef1d12b" name="Default Changelist" comment="" />
+    <list default="true" id="31e1f0a7-53a5-44b8-9f91-b57e1ef1d12b" name="Default Changelist" comment="changed welcome page">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,19 +127,22 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1aGfeRAU7rOcs7hF1tCAxxCtni0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -142,17 +155,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="taxi_service_db@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="taxi_service_db@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5ea1022a" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -171,12 +174,27 @@
       <updated>1586366946436</updated>
       <workItem from="1586366953504" duration="2679000" />
       <workItem from="1586443071758" duration="67000" />
-      <workItem from="1586615986133" duration="11288000" />
+      <workItem from="1586615986133" duration="11513000" />
+      <workItem from="1586962871662" duration="5218000" />
+      <workItem from="1586979663105" duration="294000" />
     </task>
+    <task id="LOCAL-00001" summary="changed welcome page">
+      <created>1586631251506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586631251506</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="changed welcome page" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed welcome page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586627140943">
@@ -187,6 +205,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="373" y="121" key="#phpunit.xml/0.0.1440.900@0.0.1440.900" timestamp="1586623166618" />
+    <state x="264" y="55" key="CommitChangelistDialog2" timestamp="1586980103266">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="264" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586980103266" />
+    <state x="144" y="79" key="DiffContextDialog" timestamp="1586980068711">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="144" y="79" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1586980068711" />
     <state width="958" height="245" key="GridCell.Tab.0.bottom" timestamp="1586626942899">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -203,17 +229,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="958" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586626942898" />
-    <state x="541" y="384" key="NewPhpFileDialog" timestamp="1586617320368">
+    <state x="541" y="384" key="NewPhpFileDialog" timestamp="1586974699422">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="541" y="384" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1586617320368" />
-    <state x="0" y="23" width="1440" height="805" key="SettingsEditor" timestamp="1586630718897">
+    <state x="541" y="384" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1586974699422" />
+    <state x="0" y="23" width="1440" height="805" key="SettingsEditor" timestamp="1586979643618">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="23" width="1440" height="805" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586630718897" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1586623191740">
+    <state x="0" y="23" width="1440" height="805" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586979643618" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1586631253539">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1586623191740" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586631253539" />
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586975519600">
+      <screen x="0" y="23" width="1440" height="805" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.805@0.23.1440.805" timestamp="1586975519600" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1586980184565">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1586980184565" />
   </component>
 </project>
