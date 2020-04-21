@@ -2,11 +2,26 @@
 
     namespace App;
 
-    use Illuminate\Database\Eloquent\Model;
+    use Illuminate\Foundation\Auth\User as Authentication;
 
-    class User extends Model {
+    class User extends Authentication {
 
-        protected $fillable = ['first_name', 'last_name', 'email', 'phone', 'role_id', 'taxi_park_id'];
+        protected $fillable = [
+            'first_name',
+            'last_name',
+            'email',
+            'phone',
+            'role_id',
+            'taxi_park_id',
+            'password'
+        ];
+
+        public function isAdmin(){
+            if($this->role_id == Role::ADMIN) {
+                return true;
+            }
+            return false;
+        }
 
         public function getRole(){
             return $this->belongsTo(Role::class, 'role_id', 'id');

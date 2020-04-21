@@ -6,6 +6,11 @@
 
     class Role extends Model {
 
+        const ADMIN = 1;
+        const DRIVER = 2;
+        const CLIENT = 3;
+        const USER = 4;
+
         protected $fillable = ['name'];
 
         public function getUsers(){

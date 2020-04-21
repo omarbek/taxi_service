@@ -11,12 +11,22 @@
     |
     */
 
+    Route::middleware('is_admin')->group(function(){
+        Route::get('/users', 'UserController@index')->name('users.index');
+        Route::get('/create', 'UserController@create')->name('users.create');
+    });
+
     Route::get('/', function(){
         return view('welcome');
     });
-    Route::get('/users', 'UserController@index')->name('users.index');
-    Route::get('/create', 'UserController@create')->name('users.create');
+    Route::get('/forbidden', function(){
+        return view('errors/forbidden');
+    })->name('forbidden');
     Route::post('/create', 'UserController@store')->name('users.store');
     Route::get('/edit/{id}', 'UserController@edit')->name('users.edit');
     Route::post('/update/{id}', 'UserController@update')->name('users.update');
     Route::get('/delete/{id}', 'UserController@destroy')->name('users.delete');
+
+    Auth::routes();
+
+    Route::get('/home', 'HomeController@index')->name('home');

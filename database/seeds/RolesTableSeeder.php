@@ -12,5 +12,6 @@
             \Illuminate\Support\Facades\DB::table('roles')->insert(['name' => 'admin']);
             \Illuminate\Support\Facades\DB::table('roles')->insert(['name' => 'driver']);
             \Illuminate\Support\Facades\DB::table('roles')->insert(['name' => 'client']);
+            \Illuminate\Support\Facades\DB::table('roles')->insert(['name' => 'user']);
         }
     }
