@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31e1f0a7-53a5-44b8-9f91-b57e1ef1d12b" name="Default Changelist" comment="added CRUD">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/errors/forbidden.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    <list default="true" id="31e1f0a7-53a5-44b8-9f91-b57e1ef1d12b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RolesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +43,13 @@
         <item name="taxi_service_db@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="taxi_service_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="taxi_service_db@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="taxi_service_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -217,7 +209,8 @@
       <workItem from="1587386842303" duration="21000" />
       <workItem from="1587392107291" duration="698000" />
       <workItem from="1587406063080" duration="384000" />
-      <workItem from="1587407004535" duration="5103000" />
+      <workItem from="1587407004535" duration="5246000" />
+      <workItem from="1587822926817" duration="2553000" />
     </task>
     <task id="LOCAL-00001" summary="changed welcome page">
       <created>1586631251506</created>
@@ -233,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586980269217</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added Middleware, Custom Auth">
+      <created>1587477290377</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587477290377</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +253,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changed welcome page" />
     <MESSAGE value="added CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="added CRUD" />
+    <MESSAGE value="added Middleware, Custom Auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Middleware, Custom Auth" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586627140943">
@@ -264,14 +265,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="373" y="121" key="#phpunit.xml/0.0.1440.900@0.0.1440.900" timestamp="1586623166618" />
-    <state x="264" y="55" key="CommitChangelistDialog2" timestamp="1587476915745">
+    <state x="264" y="55" key="CommitChangelistDialog2" timestamp="1587477289804">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="264" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587476915745" />
-    <state x="144" y="79" key="DiffContextDialog" timestamp="1587476915364">
+    <state x="264" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1587477289804" />
+    <state x="144" y="79" key="DiffContextDialog" timestamp="1587477245523">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="79" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1587476915364" />
+    <state x="144" y="79" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1587477245523" />
     <state width="958" height="245" key="GridCell.Tab.0.bottom" timestamp="1586626942899">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -296,10 +297,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="23" width="1440" height="805" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587477159739" />
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1586980271233">
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1587477292481">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586980271233" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1587477292481" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586975519600">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
@@ -308,9 +309,9 @@
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state x="509" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.805@0.23.1440.805" timestamp="1587405579965" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587476919131">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1587823731113">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587476919131" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1587823731113" />
   </component>
 </project>
